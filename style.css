@@ -1,0 +1,119 @@
+* { box-sizing: border-box; }
+header, main, nav, footer, figure, figcaption { display: block; }
+body {
+    font-family:Georgia, Arial, sans-serif;
+    background-color: #3d025d;
+}
+#wrapper {
+    background-color: #b9bbe6;
+    color: #3d025d;
+    width: 80%;
+    margin: auto;
+}
+header {
+    font-family: "Monotype Corsiva", Georgia, sans-serif;
+    background-color: #948ec7;
+    color: #3d025d;
+    padding: 10px;
+}
+header h1 {
+    font-size: 2em;
+    padding-left: 20px;
+}
+nav {
+    float: left;
+    width: 150px;
+    letter-spacing:0.1em;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li { padding: 15px; }
+nav a { text-decoration: none; }
+nav a:link { color: #ffffff; }
+nav a:visited { color: #eaeaea; }
+nav a:hover { color: #3d025d;}
+main {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    margin-left: 150px;
+    overflow: auto;
+}
+h2 {
+    color: #948ec7;
+    font-family: arial, sans-serif;
+    margin: 5px;
+}
+img {
+    float: right;
+    margin: 10px;
+    width: 30%;
+}
+footer {
+    font-size:80%;
+    text-align: center;
+    padding: 10px;
+    background-color: #948ec7;
+    clear: both;
+}
+table {
+    border-spacing: 0;
+}
+caption {
+    font-family: "Monotype Corsiva", Georgia, sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #b9bbe6;
+    color: #3d025d;
+    font-size: 1.5em;
+}
+thead th {
+    padding: 5px 20px;
+    background-color: #3d025d;
+    color: #b9bbe6;
+    font-weight: bold;
+}
+body td{
+    border-bottom: 1px #3d025d solid;
+    text-align: center;
+}
+tfoot td {
+    text-align: right;
+}
+tfoot {
+    font-weight: bold;
+    background-color: #3d025d;
+    color: #b9bbe6;
+}
+body tr:nth-of-type(even){
+    background-color: #b9bbe6;
+}
+@media only screen and (max-width: 1024px) {
+    body { margin: 0; }
+    #wrapper { width: auto; }
+    main { margin-left: 0; }
+    nav { float: none;
+        width: auto; }
+    nav li { display: inline-block;
+        padding: 0.5em; }
+    nav ul { text-align: center; }
+    nav a { border-style: none; }
+    h1, h2 { font-size: 120%; }
+    p { font-size: 90%; }
+}
+@media only screen and (max-width: 768px) {
+    h1, h2 { font-size: 100%; }
+    span { font-size: 80%; }
+    img { display: none; }
+    nav, nav ul, nav li { padding: 0; }
+    nav li { display: block; }
+    nav a {
+        display: block;
+        padding: 0.5em 0;
+        border-bottom: 2px ridge #3d025d;
+    }
+}
