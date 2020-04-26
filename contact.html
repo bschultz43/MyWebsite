@@ -2,9 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyWebsite: Contact</title>
+    <title>Week 10 Demo :: Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    Yay
+    <div id="wrapper">
+        <header>
+            <h1>Week 10 Demo: Forms</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <img class="decorative" src="images/lilac.png" alt="Lilac Logo"/>
+            <form name="CourseForm" id="CourseForm" method="get" action="">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="SID">Student ID </label><input type="number" name="SID" id="SID" required="required"><br>
+                    <label for="FName">First Name </label><input type="text" name="FName" id="FName" required="required"><br>
+                    <label for="LName">Last Name </label><input type="text" name="LName" id="LName" required="required"><br>
+                    <label for="PWord">Password </label><input type="password" name="PWord" id="PWord" required="required"><br>
+                </fieldset><br>
+                <fieldset>
+                    <legend>Course Selection</legend>
+                    <label for="Course">Course </label><select size="1" name="Course" id="Course">
+                        <option>Select your course</option>
+                        <option value="WebDev">Intro to Web Dev</option>
+                        <option value="CSharp">Intro to Programming</option>
+                        <option value="Java">Java Programming</option>
+                    </select><br><br>
+                    <input type="radio" name="CourseTime" id="CourseTimeAM" value="AM"> Morning Course<br>
+                    <input type="radio" name="CourseTime" id="CourseTimeNOON" value="NOON"> Noon Course<br>
+                    <input type="radio" name="CourseTime" id="CourseTimePM" value="PM"> Evening Course<br><br>
+                    <textarea name="Feedback" id="Feedback" placeholder="Requests or Concerns" rows="5" cols="60"></textarea>
+                </fieldset><br>
+                <input type="submit" value="Submit Form">
+            </form>
+        </main>
+        <footer>
+            <div>&copy;Brittney Schultz 2020</div>
+        </footer>
+    </div>
 </body>
 </html>
